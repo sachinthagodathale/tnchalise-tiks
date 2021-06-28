@@ -2,6 +2,7 @@
     "name": "tnchalise/tiks",
     "description": "Tiks Assure audit logs",
     "require": {
+        "php":">=7.0.0",
         "altek/eventually": "1.*",
         "altek/accountant": "1.*"
     },
