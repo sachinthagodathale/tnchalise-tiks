@@ -17,7 +17,7 @@ Ledger backups every in a while
    ```
    'providers' => [
         Altek\Accountant\AccountantServiceProvider::class,
-        Tiks\Audit\ServiceProvider::class,
+        Tnchalise\Tiks\ServiceProvider::class,
    ],
    ```
 
