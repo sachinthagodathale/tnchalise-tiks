@@ -1,11 +1,11 @@
 <?php
 
-namespace Tnchalise\Tiks\Models;
+namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Altek\Accountant\Contracts\Recordable;
 use Altek\Accountant\Recordable as RecordableTrait;
 use Altek\Eventually\Eventually as EventuallyTrait;
+use Illuminate\Database\Eloquent\Model;
 
 abstract class RecordableModel extends Model implements Recordable
 {
