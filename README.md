@@ -69,4 +69,4 @@ Ledger backups every in a while
 
 ### Schedule ledger archive
 
-- `$schedule->command('php artisan archive:ledgers')->dailyAtMidNight()`
+- `$schedule->command('php artisan archive:ledgers')->->saturdays();`
