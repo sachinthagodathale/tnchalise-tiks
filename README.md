@@ -59,7 +59,7 @@ Ledger backups every in a while
 6. Run Migrations
 
 7. Repalce existing model to extend RecordableModel **(optional)**
-   - `sh sh/make-model-recordable.sh` from root directory, if necessary adjust path in `sh/make-model-recordable.sh`
+   - `sh sh/make-model-auditable.sh` from root directory, if necessary adjust path in `sh/make-model-auditable.sh`
 
 ## Usage
 
