@@ -54,6 +54,9 @@ class ArchiveService
 
             info($logger);
 
+            $this->connection->commit();
+            $this->archiveConnection->commit();
+
         } catch (\Exception $e) {
             $this->connection->rollBack();
             $this->archiveConnection->rollBack();
