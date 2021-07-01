@@ -18,7 +18,7 @@ class LedgerArchives extends Migration
 
     public function up()
     {
-        Schema::connection($this->connection)->create('ledger_archives', function (Blueprint $table) {
+        Schema::connection($this->connection)->create('ledgers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('user_type')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
@@ -44,6 +44,6 @@ class LedgerArchives extends Migration
 
     public function down()
     {
-        Schema::connection($this->connection)->dropIfExists('ledger_archives');
+        Schema::connection($this->connection)->dropIfExists('ledgers');
     }
 }

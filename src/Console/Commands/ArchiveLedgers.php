@@ -13,6 +13,6 @@ class ArchiveLedgers extends Command
     public function handle()
     {
         $service = app()->make(ArchiveService::class);
-        $service->writeAndWipe();
+        // $service->writeAndWipe();, do nothing
     }
 }
