@@ -22,12 +22,5 @@
       "name": "tnchalise",
       "email": "tek@tiks.com.au"
     }
-  ],
-  "extra": {
-    "laravel": {
-      "providers": [
-        "tnchalise\\tiks\\ServiceProvider"
-      ]
-    }
-  }
+  ]
 }
