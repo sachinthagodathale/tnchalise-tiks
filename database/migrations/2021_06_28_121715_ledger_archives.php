@@ -1,24 +1,24 @@
 <?php
 
-
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class LedgerArchives extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
+    public $connection;
+
+    public function __construct()
+    {
+        $connections = config('database.connections');
+        $exits = array_get($connections, 'audit', false);
+        $this->connection = $exits ? 'audit' : 'mysql';
+    }
+
     public function up()
     {
-        Schema::table('ledgers', function (Blueprint $table) {
-            $table->string('user_agent', 500)->change();
-        });
-
-        Schema::connection('audit')->create('ledger_archives', function (Blueprint $table) {
+        Schema::connection($this->connection)->create('ledger_archives', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('user_type')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
@@ -42,17 +42,8 @@ class LedgerArchives extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
-        Schema::table('ledgers', function (Blueprint $table) {
-            $table->string('user_agent', 255)->change();
-        });
-
-        Schema::connection('audit')->dropIfExists('ledger_archives');
+        Schema::connection($this->connection)->dropIfExists('ledger_archives');
     }
 }

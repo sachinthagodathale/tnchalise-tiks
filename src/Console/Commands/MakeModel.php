@@ -2,12 +2,12 @@
 
 namespace Tnchalise\Tiks\Console\Commands;
 
-use Illuminate\Console\GeneratorCommand;
+use Illuminate\Foundation\Console\ModelMakeCommand;
 
-class MakeModel extends GeneratorCommand
+class MakeModel extends ModelMakeCommand
 {
-    protected $name = 'make:recordable-model';
-    protected $description = 'Make a model that implements Altek Accountant';
+    protected $name = 'make:model';
+    protected $description = 'Create a new Eloquent model class';
     protected $type = 'Model';
 
     protected function getDefaultNamespace($rootNamespace)
