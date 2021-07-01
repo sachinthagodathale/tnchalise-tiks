@@ -2,7 +2,7 @@
   "name": "tnchalise/tiks",
   "description": "Tiks Assure audit logs",
   "require": {
-    "laravel/framework": "5.5.*",
+    "illuminate/foundation": "5.5.*",
     "altek/eventually": "1.*",
     "altek/accountant": "1.*"
   },
