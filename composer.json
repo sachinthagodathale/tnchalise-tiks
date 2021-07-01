@@ -1,32 +1,33 @@
 {
-    "name": "tnchalise/tiks",
-    "description": "Tiks Assure audit logs",
-    "require": {
-        "altek/eventually": "1.*",
-        "altek/accountant": "1.*"
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Tnchalise\\Tiks\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tnchalise\\Tiks\\Tests\\": "tests/"
-        }
-    },
-    "authors": [
-        {
-            "name": "tnchalise",
-            "email": "tek@tiks.com.au"
-        }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "tnchalise\\tiks\\ServiceProvider"
-            ]
-        }
+  "name": "tnchalise/tiks",
+  "description": "Tiks Assure audit logs",
+  "require": {
+    "laravel/framework": "5.5.*",
+    "altek/eventually": "1.*",
+    "altek/accountant": "1.*"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Tnchalise\\Tiks\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tnchalise\\Tiks\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "tnchalise",
+      "email": "tek@tiks.com.au"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "tnchalise\\tiks\\ServiceProvider"
+      ]
+    }
+  }
 }
