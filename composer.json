@@ -2,7 +2,7 @@
   "name": "tnchalise/tiks",
   "description": "Tiks Assure audit logs",
   "require": {
-    "altek/eventually": "1.*",
+    "altek/eventually": "2.*",
     "altek/accountant": "1.*"
   },
   "license": "MIT",
