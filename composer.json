@@ -3,7 +3,7 @@
   "description": "Tiks Assure audit logs",
   "require": {
     "altek/eventually": "2.*",
-    "altek/accountant": "1.*"
+    "altek/accountant": "3.*"
   },
   "license": "MIT",
   "autoload": {
